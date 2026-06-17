@@ -59,14 +59,14 @@ WaveManager.prototype.update = function(){
 			var baddies = [];
 
 			//get eligible baddies
-			if(wave.corn > 0)
-				baddies.push('corn');
+			if(wave.bitcoin > 0)
+				baddies.push('bitcoin');
 
-			if(wave.cane > 0)
-				baddies.push('cane');
+			if(wave.doge > 0)
+				baddies.push('doge');
 
-			if(wave.bear > 0)
-				baddies.push('bear');
+			if(wave.eth > 0)
+				baddies.push('eth');
 
 			if( baddies.length == 0 && CollisionManager.groups.baddies.length == 0){
 
@@ -101,17 +101,17 @@ WaveManager.prototype.update = function(){
 				var baddie = baddies[this.getRandomInt(0, baddies.length - 1)];
 
 				switch(baddie){
-					case 'corn':
+					case 'bitcoin':
 						var b = new Corn(this.game, this.getSpawn());
-						this.waves[this.currentWave].corn--;
+						this.waves[this.currentWave].bitcoin--;
 						break;
-					case 'cane':
+					case 'doge':
 						var b = new Cane(this.game, this.getSpawn());
-						this.waves[this.currentWave].cane--;
+						this.waves[this.currentWave].doge--;
 						break;
-					case 'bear':
+					case 'eth':
 						var b = new Bear(this.game, this.getSpawn());
-						this.waves[this.currentWave].bear--;
+						this.waves[this.currentWave].eth--;
 						break;
 				}
 			}

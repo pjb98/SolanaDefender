@@ -45,15 +45,15 @@ MainGame.resources.LoaderState = {
 		  {name: 'player', path: 'assets/spritesheets/player.png', width: 36, height: 36}
 		, {name: 'player_health', path: 'assets/spritesheets/player_health.png', width: 48, height: 6}
 
-		, {name: 'corn', path: 'assets/spritesheets/corn.png', width: 40, height: 40}
-		, {name: 'corn_die', path: 'assets/spritesheets/corn_die.png', width: 4, height: 4}
+		, {name: 'bitcoin', path: 'assets/spritesheets/bitcoin.png', width: 40, height: 40}
+		, {name: 'bitcoin_die', path: 'assets/spritesheets/bitcoin_die.png', width: 4, height: 4}
 
-		, {name: 'mint', path: 'assets/spritesheets/mint.png', width: 40, height: 40}
-		, {name: 'mint_die', path: 'assets/spritesheets/mint_die.png', width: 4, height: 4}
-		, {name: 'mint_explode', path: 'assets/spritesheets/mint_explode.png', width: 32, height: 32}
+		, {name: 'eth', path: 'assets/spritesheets/eth.png', width: 40, height: 40}
+		, {name: 'eth_die', path: 'assets/spritesheets/eth_die.png', width: 4, height: 4}
+		, {name: 'eth_explode', path: 'assets/spritesheets/eth_explode.png', width: 32, height: 32}
 
-		, {name: 'gumball', path: 'assets/spritesheets/gumball.png', width: 44, height: 44}
-		, {name: 'gumball_die', path: 'assets/spritesheets/gumball_die.png', width: 4, height: 4}
+		, {name: 'doge', path: 'assets/spritesheets/doge.png', width: 44, height: 44}
+		, {name: 'doge_die', path: 'assets/spritesheets/doge_die.png', width: 4, height: 4}
 
 		, {name: 'turret_small', path: 'assets/spritesheets/turret_small.png', width: 32, height: 32}
 		, {name: 'turret_big', path: 'assets/spritesheets/turret_big.png', width: 64, height: 64}

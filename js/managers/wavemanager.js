@@ -90,7 +90,8 @@ WaveManager.prototype.update = function(){
 						GUIManager.destroy();
 						WaveManager.destroy();
 						this.game.state.states['GameOver'].win = true;
-						this.game.state.start('GameOver');
+						var game = this.game;
+						game.time.events.add(1, function(){ game.state.start('GameOver'); });
 					}
 					else{
 						this._state = this.states.PAUSED;
@@ -183,7 +184,8 @@ WaveManager.prototype.startNewWave = function(){
 		GUIManager.destroy();
 		WaveManager.destroy();
 		this.game.state.states['GameOver'].win = true;
-		this.game.state.start('GameOver');
+		var game = this.game;
+		game.time.events.add(1, function(){ game.state.start('GameOver'); });
 	}
 	else{
 		

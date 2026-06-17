@@ -45,5 +45,6 @@ Tooth.prototype.die = function(){
 	GUIManager.destroy();
 	WaveManager.destroy();
 	this.game.state.states['GameOver'].win = false;
-	this.game.state.start('GameOver');
+	var game = this.game;
+	game.time.events.add(1, function(){ game.state.start('GameOver'); });
 }

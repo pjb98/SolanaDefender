@@ -27,6 +27,14 @@ Tooth.prototype.update = function(){
 	p = parseFloat(p.toFixed(1));
 
 	this.healthBar.frame = 10 - (p * 10);
+
+	if(this.health <= 0){
+		this.die();
+	}
+}
+
+Tooth.prototype.kill = function(){
+	this.die();
 }
 
 Tooth.prototype.die = function(){

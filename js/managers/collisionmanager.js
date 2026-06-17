@@ -74,12 +74,16 @@ CollisionManager.prototype.update = function(){
 		for( var k = 0; k < this.groups.baddies.length; k++ ){
 			var baddie = this.groups.baddies[k];
 			this.game.physics.collide(player, baddie, function(){
-				if(baddie.name=="mint"){
+				if(baddie.name=="eth"){
 					player._damage(10);
 					baddie.die();
 				}
-				else if(baddie.name=="corn"){
+				else if(baddie.name=="bitcoin"){
 					player._damage(20);
+					baddie.die();
+				}
+				else if(baddie.name=="doge"){
+					player._damage(15);
 					baddie.die();
 				}
 			});
@@ -137,12 +141,16 @@ CollisionManager.prototype.update = function(){
 		for( var k = 0; k < this.groups.baddies.length; k++ ){
 			var baddie = this.groups.baddies[k];
 			this.game.physics.collide(tooth, baddie, function(){
-				if(baddie.name == "mint"){
+				if(baddie.name == "eth"){
 					tooth.damage(20);
 					baddie.die();
 				}
-				else if(baddie.name == "corn"){
+				else if(baddie.name == "bitcoin"){
 					tooth.damage(30);
+					baddie.die();
+				}
+				else if(baddie.name == "doge"){
+					tooth.damage(10);
 					baddie.die();
 				}
 			});
@@ -155,12 +163,16 @@ CollisionManager.prototype.update = function(){
 		for( var k = 0; k < this.groups.turrets.length; k++ ){
 			var turret = this.groups.turrets[k];
 			this.game.physics.collide(baddie, turret, function(){
-				if(baddie.name == "mint"){
+				if(baddie.name == "eth"){
 					turret.damage(10);
 					baddie.die();
 				}
-				else if(baddie.name == "corn"){
+				else if(baddie.name == "bitcoin"){
 					turret.damage(20);
+					baddie.die();
+				}
+				else if(baddie.name == "doge"){
+					turret.damage(15);
 					baddie.die();
 				}
 			});

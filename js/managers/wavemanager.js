@@ -68,6 +68,12 @@ WaveManager.prototype.update = function(){
 			if(wave.eth > 0)
 				baddies.push('eth');
 
+			if(wave.cake > 0)
+				baddies.push('cake');
+
+			if(wave.popcat > 0)
+				baddies.push('popcat');
+
 			if( baddies.length == 0 && CollisionManager.groups.baddies.length == 0){
 
 				if(this.pauseTime == 0){
@@ -112,6 +118,14 @@ WaveManager.prototype.update = function(){
 					case 'eth':
 						var b = new Bear(this.game, this.getSpawn());
 						this.waves[this.currentWave].eth--;
+						break;
+					case 'cake':
+						var b = new Cake(this.game, this.getSpawn());
+						this.waves[this.currentWave].cake--;
+						break;
+					case 'popcat':
+						var b = new Popcat(this.game, this.getSpawn());
+						this.waves[this.currentWave].popcat--;
 						break;
 				}
 			}

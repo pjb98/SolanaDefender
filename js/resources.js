@@ -55,6 +55,13 @@ MainGame.resources.LoaderState = {
 		, {name: 'doge', path: 'assets/spritesheets/doge.png', width: 44, height: 44}
 		, {name: 'doge_die', path: 'assets/spritesheets/doge_die.png', width: 4, height: 4}
 
+		, {name: 'cake', path: 'assets/spritesheets/cake.png', width: 40, height: 40}
+		, {name: 'cake_die', path: 'assets/spritesheets/cake_die.png', width: 4, height: 4}
+
+		, {name: 'popcat', path: 'assets/spritesheets/popcat.png', width: 40, height: 40}
+		, {name: 'popcat_die', path: 'assets/spritesheets/popcat_die.png', width: 4, height: 4}
+		, {name: 'popcat_explode', path: 'assets/spritesheets/popcat_explode.png', width: 4, height: 4}
+
 		, {name: 'turret_small', path: 'assets/spritesheets/turret_small.png', width: 32, height: 32}
 		, {name: 'turret_big', path: 'assets/spritesheets/turret_big.png', width: 64, height: 64}
 		, {name: 'turret_progress', path: 'assets/spritesheets/turret_progress.png', width: 9, height: 9}

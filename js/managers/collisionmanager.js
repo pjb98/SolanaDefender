@@ -86,6 +86,14 @@ CollisionManager.prototype.update = function(){
 					player._damage(15);
 					baddie.die();
 				}
+				else if(baddie.name=="cake"){
+					player._damage(20);
+					baddie.die();
+				}
+				else if(baddie.name=="popcat"){
+					player._damage(10);
+					baddie.die();
+				}
 			});
 		}
 	}
@@ -153,6 +161,14 @@ CollisionManager.prototype.update = function(){
 					tooth.damage(10);
 					baddie.die();
 				}
+				else if(baddie.name == "cake"){
+					tooth.damage(25);
+					baddie.die();
+				}
+				else if(baddie.name == "popcat"){
+					tooth.damage(15);
+					baddie.die();
+				}
 			});
 		}
 	}
@@ -173,6 +189,14 @@ CollisionManager.prototype.update = function(){
 				}
 				else if(baddie.name == "doge"){
 					turret.damage(15);
+					baddie.die();
+				}
+				else if(baddie.name == "cake"){
+					turret.damage(20);
+					baddie.die();
+				}
+				else if(baddie.name == "popcat"){
+					turret.damage(10);
 					baddie.die();
 				}
 			});

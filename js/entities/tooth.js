@@ -28,13 +28,17 @@ Tooth.prototype.update = function(){
 
 	this.healthBar.frame = 10 - (p * 10);
 
-	if(this.health <= 0){
+	if(this.health <= 0 && !this._dead){
+		this._dead = true;
 		this.die();
 	}
 }
 
 Tooth.prototype.kill = function(){
-	this.die();
+	if(!this._dead){
+		this._dead = true;
+		this.die();
+	}
 }
 
 Tooth.prototype.die = function(){
